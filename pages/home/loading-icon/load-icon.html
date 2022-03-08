@@ -8,14 +8,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project</title>
     <link rel="stylesheet" href="load-icon.css">
+    <link rel="stylesheet" href="main.css">
     <script src="load-icon.js"></script>
 </head>
 <body>
+    <!-- this pops up my logo before the page runs -->
     <div id="load"></div>
     <div id="contents">
-        jlkjjlkjlkjlkjlklk
-        <h1>Put your HTML content before insertion of b.js.</h1>
-        <p>And whatever content you want afterwards.</p>
-  </div>  
+        
+        <header class="header">
+            <nav class="navbar">
+                <a href="#" class="nav-logo">
+                        <h1>X<img src="../../../assets/images/logo4.svg" alt="logo">penseTracker</h1>
+                </a>
+                <ul class="nav-menu">
+                    
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">How It Works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#login" data-toggle="modal" class="nav-link " >Sign In</a>
+                    </li>
+                    <li class="nav-item">
+                            <a href="#sign-up" data-toggle="modal" class="nav-link " >Sign Up</a>
+                    </li>
+                    
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                  </div>
+              </nav>
+          </header>
+          <!-- --------------------------- end of header ----------------------- -->
+        
 </body>
+<script src="main.js"></script>
 </html>
