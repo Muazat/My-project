@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="main.css">
     <script src="load-icon.js"></script>
 </head>
-<body>
+<body >
     <!-- this pops up my logo before the page runs -->
     <div id="load"></div>
     <div id="contents">
@@ -27,7 +27,8 @@
                         <a href="#" class="nav-link">How It Works</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#login" data-toggle="modal" class="nav-link " >Sign In</a>
+                        <a href="#login" data-toggle="modal" class="nav-link " onclick="login(), openForm()" >Sign In</a>
+                        <div id="m"></div>
                     </li>
                     <li class="nav-item">
                             <a href="#sign-up" data-toggle="modal" class="nav-link " >Sign Up</a>
@@ -43,7 +44,7 @@
           </header>
           <!-- --------------------------- end of header ----------------------- -->
 
-    
+        <div onclick="closeForm(), closeMenu()">
           <div class='banner'>
             <div class="container-b">
                 <div class="info">
@@ -145,8 +146,9 @@
                 <p>TERMS AND CONDITION</p>
             </div>
         </footer>
-      
+    </div>
         
 </body>
 <script src="main.js"></script>
+<script src="../../sign-in/login.js"></script>
 </html>
